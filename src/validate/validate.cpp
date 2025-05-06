@@ -33,7 +33,7 @@
         return false;
     }
     for (const char& symbol : s) {
-        if (isalpha(symbol) != 0 && isdigit(symbol) != 0 && symbol != '_' &&
+        if (isalpha(symbol) == 0 && isdigit(symbol) == 0 && symbol != '_' &&
             symbol != '-') {
             return false;
         }
